@@ -13,22 +13,7 @@ namespace CafetoTest.Messengers.Implementations
     {
         public void SaveMessage(Message message)
         {
-            var completeMessage = $"Message: {message.MessageContent} Message type: {message.MessageType}";
-
-            switch (message.MessageType)
-            {
-                case MessageType.Warning:
-                    completeMessage += $" Warning Type: {message.WarningType}";
-                    break;
-                case MessageType.Error:
-                    completeMessage += $" Error Type: {message.ErrorType}";
-                    break;
-                case MessageType.Message:
-                    break;
-                default:
-                    throw new MessageTypeNotConfiguredException();
-            }
-
+            var completeMessage = TextBuilder.MessageBuilder(message);
             System.Console.WriteLine(completeMessage);
         }
     }

@@ -49,6 +49,7 @@
     <Compile Include="Helpers\EnumMessageType.cs" />
     <Compile Include="Helpers\EnumMessengers.cs" />
     <Compile Include="Helpers\EnumWarningType.cs" />
+    <Compile Include="Helpers\TextBuilder.cs" />
     <Compile Include="JobLogger.cs" />
     <Compile Include="Messengers\Implementations\Database.cs" />
     <Compile Include="Models\Message.cs" />
