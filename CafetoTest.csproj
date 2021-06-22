@@ -43,8 +43,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\JobLoggerNotInitializedException.cs" />
+<<<<<<< HEAD
     <Compile Include="JobLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+=======
+    <Compile Include="Exceptions\MessageTypeNotConfiguredException.cs" />
+    <Compile Include="Exceptions\MessengerNotConfiguredException.cs" />
+    <Compile Include="Helpers\EnumErrorType.cs" />
+    <Compile Include="Helpers\EnumMessageType.cs" />
+    <Compile Include="Helpers\EnumMessengers.cs" />
+    <Compile Include="Helpers\EnumWarningType.cs" />
+    <Compile Include="JobLogger.cs" />
+    <Compile Include="Messengers\Implementations\Database.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Messengers\IMessageProcessor.cs" />
+    <Compile Include="Messengers\Implementations\Console.cs" />
+    <Compile Include="Messengers\Implementations\TextFile.cs" />
+    <Compile Include="Messengers\Interfaces\IListMessenger.cs" />
+    <Compile Include="Messengers\MessengerProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+>>>>>>> 9d87c414f350436cf53fe399c0913a0858ae8db0
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
