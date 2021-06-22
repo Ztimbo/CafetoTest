@@ -43,6 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\JobLoggerNotInitializedException.cs" />
+<<<<<<< HEAD
+    <Compile Include="JobLogger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+=======
     <Compile Include="Exceptions\MessageTypeNotConfiguredException.cs" />
     <Compile Include="Exceptions\MessengerNotConfiguredException.cs" />
     <Compile Include="Helpers\EnumErrorType.cs" />
@@ -60,5 +65,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
+>>>>>>> 9d87c414f350436cf53fe399c0913a0858ae8db0
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
