@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\JobLoggerNotInitializedException.cs" />
+    <Compile Include="Exceptions\MessageTypeNotConfiguredException.cs" />
     <Compile Include="Exceptions\MessengerNotConfiguredException.cs" />
     <Compile Include="Helpers\EnumErrorType.cs" />
     <Compile Include="Helpers\EnumMessageType.cs" />
