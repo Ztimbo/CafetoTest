@@ -3,6 +3,7 @@ using System;
 using System.Configuration;
 using System.IO;
 using CafetoTest.Helpers;
+using CafetoTest.Helpers.HelperMethods;
 using CafetoTest.Messengers;
 
 namespace CafetoTest
@@ -24,38 +25,12 @@ namespace CafetoTest
         {
             if (!_initialized) throw new JobLoggerNotInitializedException();
 
+            MessageValidator.Validate(message);
+
             _messageProcessor.SetMessenger(messenger);
-
-            if (string.IsNullOrEmpty(message.MessageContent) || message.MessageContent.Length == 0)
-            {
-                return;
-            }
-
-            message.MessageContent = message.MessageContent.Trim();
-
             _messageProcessor.SetMessage(message);
 
-            /*if ((!_logErrorType && !_logMessageType && !_logWarningType) || (!messageType && !warningType && !errorType))
-            {
-                throw new Exception("Error or Warning or Message must be specified");
-            }
-
-            int t;
-
-            if (messageType && _logMessageType)
-            {
-                t = 1;
-            }
-
-            if (errorType && _logErrorType)
-            {
-                t = 2;
-            }
-
-            if (warningType && _logWarningType)
-            {
-                t = 3;
-            }
+            /*
 
             string l = string.Empty;
 

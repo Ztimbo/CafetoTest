@@ -42,13 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\EmptyMessageException.cs" />
     <Compile Include="Exceptions\JobLoggerNotInitializedException.cs" />
+    <Compile Include="Exceptions\MessageDetailsException.cs" />
     <Compile Include="Exceptions\MessageTypeNotConfiguredException.cs" />
     <Compile Include="Exceptions\MessengerNotConfiguredException.cs" />
     <Compile Include="Helpers\Enumerators\EnumErrorType.cs" />
     <Compile Include="Helpers\Enumerators\EnumMessageType.cs" />
     <Compile Include="Helpers\Enumerators\EnumMessengers.cs" />
     <Compile Include="Helpers\Enumerators\EnumWarningType.cs" />
+    <Compile Include="Helpers\HelperMethods\MessageValidator.cs" />
     <Compile Include="Helpers\HelperMethods\TextBuilder.cs" />
     <Compile Include="JobLogger.cs" />
     <Compile Include="Messengers\Implementations\Database.cs" />

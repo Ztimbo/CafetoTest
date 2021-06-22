@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace CafetoTest.Helpers
     {
         public static string MessageBuilder(Message message)
         {
-            var messageOutput = $"Message: {message.MessageContent} Message type: {message.MessageType}";
+            var messageOutput = $"[{message.MessageDate.ToString(CultureInfo.InvariantCulture)}] Message: {message.MessageContent} Message type: {message.MessageType}";
 
             switch (message.MessageType)
             {

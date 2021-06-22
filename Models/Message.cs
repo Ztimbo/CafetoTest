@@ -13,5 +13,6 @@ namespace CafetoTest
         public MessageType MessageType { get; set; }
         public ErrorType? ErrorType { get; set; }
         public WarningType? WarningType { get; set; }
+        public DateTime MessageDate => DateTime.Now;
     }
 }
