@@ -15,6 +15,8 @@ namespace CafetoTest.Helpers.HelperMethods
 
             message.MessageContent = message.MessageContent.Trim();
 
+            if(message.MessageType == null) throw new MessageTypeNotConfiguredException();
+
             switch (message.MessageType)
             {
                 case MessageType.Warning when message.WarningType == null:

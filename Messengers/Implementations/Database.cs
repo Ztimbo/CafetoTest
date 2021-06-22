@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CafetoTest.Helpers.HelperMethods;
 using CafetoTest.Messengers.Interfaces;
 
 namespace CafetoTest.Messengers.Implementations
@@ -11,7 +12,7 @@ namespace CafetoTest.Messengers.Implementations
     {
         public void SaveMessage(Message message)
         {
-            throw new NotImplementedException();
+            DBManagement.SaveMessage(message);
         }
     }
 }

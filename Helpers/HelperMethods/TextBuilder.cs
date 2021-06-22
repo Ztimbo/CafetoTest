@@ -12,15 +12,15 @@ namespace CafetoTest.Helpers
     {
         public static string MessageBuilder(Message message)
         {
-            var messageOutput = $"[{message.MessageDate.ToString(CultureInfo.InvariantCulture)}] Message: {message.MessageContent} Message type: {message.MessageType}";
+            var messageOutput = $"[{message.MessageDate.ToString(CultureInfo.InvariantCulture)}] [Message: {message.MessageContent}] [Message type: {message.MessageType}]";
 
             switch (message.MessageType)
             {
                 case MessageType.Warning:
-                    messageOutput += $" Warning Type: {message.WarningType}";
+                    messageOutput += $" [Warning Type: {message.WarningType}]";
                     break;
                 case MessageType.Error:
-                    messageOutput += $" Error Type: {message.ErrorType}";
+                    messageOutput += $" [Error Type: {message.ErrorType}]";
                     break;
                 case MessageType.Message:
                     break;
