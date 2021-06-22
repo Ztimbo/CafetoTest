@@ -45,11 +45,11 @@
     <Compile Include="Exceptions\JobLoggerNotInitializedException.cs" />
     <Compile Include="Exceptions\MessageTypeNotConfiguredException.cs" />
     <Compile Include="Exceptions\MessengerNotConfiguredException.cs" />
-    <Compile Include="Helpers\EnumErrorType.cs" />
-    <Compile Include="Helpers\EnumMessageType.cs" />
-    <Compile Include="Helpers\EnumMessengers.cs" />
-    <Compile Include="Helpers\EnumWarningType.cs" />
-    <Compile Include="Helpers\TextBuilder.cs" />
+    <Compile Include="Helpers\Enumerators\EnumErrorType.cs" />
+    <Compile Include="Helpers\Enumerators\EnumMessageType.cs" />
+    <Compile Include="Helpers\Enumerators\EnumMessengers.cs" />
+    <Compile Include="Helpers\Enumerators\EnumWarningType.cs" />
+    <Compile Include="Helpers\HelperMethods\TextBuilder.cs" />
     <Compile Include="JobLogger.cs" />
     <Compile Include="Messengers\Implementations\Database.cs" />
     <Compile Include="Models\Message.cs" />
