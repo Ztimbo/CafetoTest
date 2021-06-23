@@ -47,11 +47,10 @@
     <Compile Include="Exceptions\MessageDetailsException.cs" />
     <Compile Include="Exceptions\MessageTypeNotConfiguredException.cs" />
     <Compile Include="Exceptions\MessengerNotConfiguredException.cs" />
-    <Compile Include="Helpers\Enumerators\EnumErrorType.cs" />
-    <Compile Include="Helpers\Enumerators\EnumMessageType.cs" />
-    <Compile Include="Helpers\Enumerators\EnumMessengers.cs" />
-    <Compile Include="Helpers\Enumerators\EnumWarningType.cs" />
+    <Compile Include="Helpers\Enumerators.cs" />
+    <Compile Include="Helpers\HelperMethods\ConsoleManagement.cs" />
     <Compile Include="Helpers\HelperMethods\DBManagement.cs" />
+    <Compile Include="Helpers\HelperMethods\FileManagement.cs" />
     <Compile Include="Helpers\HelperMethods\MessageValidator.cs" />
     <Compile Include="Helpers\HelperMethods\TextBuilder.cs" />
     <Compile Include="JobLogger.cs" />
@@ -64,5 +63,6 @@
     <Compile Include="Messengers\MessengerProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,6 +17,7 @@ namespace CafetoTest.Helpers.HelperMethods
         {
             var completeMessage = TextBuilder.MessageBuilder(message);
             var sqlCommand = new SqlCommand($"INSERT INTO Logs(MessageContent) VALUES('{completeMessage}')", Conn);
+
             try
             {
                 Conn.Open();

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CafetoTest.Exceptions;
 using CafetoTest.Helpers;
+using CafetoTest.Helpers.Enumerators;
 using CafetoTest.Messengers.Implementations;
 using CafetoTest.Messengers.Interfaces;
 using Console = CafetoTest.Messengers.Implementations.Console;

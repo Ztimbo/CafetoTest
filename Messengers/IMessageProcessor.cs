@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CafetoTest.Helpers;
+using CafetoTest.Helpers.Enumerators;
 
 namespace CafetoTest.Messengers
 {

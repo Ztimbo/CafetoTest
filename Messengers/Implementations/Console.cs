@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CafetoTest.Exceptions;
 using CafetoTest.Helpers;
+using CafetoTest.Helpers.HelperMethods;
 using CafetoTest.Messengers.Interfaces;
 
 namespace CafetoTest.Messengers.Implementations
@@ -13,8 +14,7 @@ namespace CafetoTest.Messengers.Implementations
     {
         public void SaveMessage(Message message)
         {
-            var completeMessage = TextBuilder.MessageBuilder(message);
-            System.Console.WriteLine(completeMessage);
+            ConsoleManagement.ConsolePrinter(message);
         }
     }
 }
